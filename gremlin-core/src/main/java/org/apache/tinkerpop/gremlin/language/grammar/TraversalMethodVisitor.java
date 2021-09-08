@@ -1017,6 +1017,11 @@ public class TraversalMethodVisitor extends TraversalRootVisitor<GraphTraversal>
         return graphTraversal.outV();
     }
 
+    @Override
+    public Traversal visitTraversalMethod_connectedComponent(final GremlinParser.TraversalMethod_connectedComponentContext ctx) {
+        return graphTraversal.connectedComponent();
+    }
+
     /**
      * {@inheritDoc}
      */
